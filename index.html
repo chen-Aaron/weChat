@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="test">this is my first web<p>
+<p id="showid"></p>
+</body>
+<script>
+    window.onhashchange=function(){
+        document.getElementById('showid').innerHTML=Math.random(0,1);
+    }
+    for(var i=0;i<10;i++){
+        var element=document.createElement('a');
+        element.href='#'+i;
+        element.innerHTML=i;
+        document.getElementById('test').appendChild(element);
+    };
+
+</script>
+</html>
