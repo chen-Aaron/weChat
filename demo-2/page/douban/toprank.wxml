@@ -1,0 +1,37 @@
+<block wx:if="{{showloading}}">
+  <view class="flex-wrp" >
+  <view class="flex-item2" ></view>
+  <image mode="aspectFill" class="flex-item2" src="http://www.3g37.com/haotu/UploadFiles_5488/201102/20110216225239771.gif"/>
+  <view style="line-height:480rpx;" class="flex-item4" >正在加载...</view>
+  </view>
+</block>
+<block  wx:else >
+  <scroll-view wx:for="{{ TopMovie }}" srcoll-y="true" >
+    <view bindtap="GotoMovie" data-id="{{ item.id }}" class="flex-wrp" >
+      <image class="flex-item2 img-small" mode='aspectFill' src="{{item.images.small}}"/>
+      <view class="flex-item4 film-info" >
+        <text class="film-list film-list-title">{{item.title}}</text>
+        <view class="film-list">
+          <view class="img-star-{{item.rating.stars}}"></view>
+          <text>{{item.rating.average}}</text>
+        </view>
+        <view class="film-list">
+          <text class="film-list-info">导演:<text>{{item.directors.name}}</text></text>
+        </view>
+        <view class="film-list film-list-info">主演：<text wx:for="{{item.casts}}" wx:for-item="items" ><text> {{items.name}}</text></text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  <block wx:if="{{moreloading}}" >
+   <view>
+        <button  >正在加载...</button> 
+    </view>
+  </block>
+  <block wx:else >
+    <view>
+        <button bindtap="getMore" >更多内容</button> 
+    </view>
+  </block>
+</block>
+

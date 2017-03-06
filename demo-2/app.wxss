@@ -1,0 +1,179 @@
+.flex-wrp{
+  display:-webkit-flex;
+  min-height:240rpx;
+  flex-direction: row;
+  margin-bottom: 10rpx;
+}
+.flex-wrp .flex-item{
+  flex:1;
+}
+.flex-wrp .flex-item2{
+  flex:2;
+}
+.flex-wrp .flex-item3{
+  flex:3;
+}
+.flex-wrp .flex-item4{
+  flex:4;
+}
+.img-small{
+  padding: 10rpx 20rpx;
+  height:280rpx;
+}
+.film-info{
+  padding: 10rpx 20rpx;
+}
+.img-star-0{
+  display: inline-block;
+  width:110rpx;
+  height:11px;
+  overflow: hidden;
+  background-image: url('https://img3.doubanio.com/f/shire/b8f4c3672ef81106701071831e22422a745d3b74/pics/rating_icons/ic_rating_s.png');
+  background-position:0 -220px;
+}
+.img-star-5{
+  display: inline-block;
+  width:110rpx;
+  height:11px;
+  overflow: hidden;
+  background-image: url('../../image/ic_rating_s.png');
+  background-position:0 -198px;
+}
+.img-star-10{
+  display: inline-block;
+  width:110rpx;
+  height:11px;
+  overflow: hidden;
+  background-image: url('../../image/ic_rating_s.png');
+  background-position:0 -176px;
+}
+.img-star-15{
+  display: inline-block;
+  width:110rpx;
+  height:1px;
+  overflow: hidden;
+  background-image: url('../../image/ic_rating_s.png');
+  background-position:0 -154px;
+}
+.img-star-20{
+  display: inline-block;
+  width:110rpx;
+  height:11px;
+  overflow: hidden;
+  background-image: url('../../image/ic_rating_s.png');
+  background-position:0 -132px;
+}
+.img-star-25{
+  display: inline-block;
+  width:110rpx;
+  height:11px;
+  overflow: hidden;
+  background-image: url('../../image/ic_rating_s.png');
+  background-position:0 -110px;
+}
+.img-star-30{
+  display: inline-block;
+  width:110rpx;
+  height:11px;
+  overflow: hidden;
+  background-image: url('../../image/ic_rating_s.png');
+  background-position:0 -88px;
+}
+.img-star-35{
+  display: inline-block;
+  width:110rpx;
+  height:11px;
+  overflow: hidden;
+  background-image: url('../../image/ic_rating_s.png');
+  background-position:0 -66px;
+
+}
+.img-star-40{
+  display: inline-block;
+  width:110rpx;
+  height:11px;
+  overflow: hidden;
+  background-image: url('../../image/ic_rating_s.png');
+  background-position:0 -44px;
+}
+.img-star-45{
+  display: inline-block;
+  width:110rpx;
+  height:11px;
+  overflow: hidden;
+  background-image: url('../../image/ic_rating_s.png');
+  background-position:0 -22px;
+}
+.img-star-50{
+  display: inline-block;
+  width:110rpx;
+  height:11px;
+  overflow: hidden;
+  background-image: url('../../image/ic_rating_s.png');
+  background-position:0 0rpx;
+}
+.film-list-info{
+  color:#777;
+}
+.film-list-title{
+  display: block;
+}
+.film-list{
+  margin-bottom: 26rpx;
+}
+.film-list-hr{
+  padding: 1rpx 0rpx;
+  background-color: #999;
+}
+
+.spinner {
+  margin: 100px auto 0;
+  width: 150px;
+  text-align: center;
+}
+ 
+.spinner > div {
+  width: 60rpx;
+  height: 60rpx;
+  background-color: #67CF22;
+ 
+  border-radius: 100%;
+  display: inline-block;
+  animation: bouncedelay 1.4s infinite ease-in-out;
+  /* Prevent first frame from flickering when animation starts */
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+ 
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+ 
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+ 
+@-webkit-keyframes bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0.0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+ 
+@keyframes bouncedelay {
+  0%, 80%, 100% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 40% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+.autoheight{
+  position: relative;
+  top:-100rpx;
+  margin-top: 50%;
+}
+view{
+  background-color: white;
+}

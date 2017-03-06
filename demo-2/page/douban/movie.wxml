@@ -1,0 +1,45 @@
+<block wx:if="{{showloading}}">
+  <view class="flex-wrp" >
+  <view class="flex-item2" ></view>
+  <image mode="aspectFill" class="flex-item2" src="http://www.3g37.com/haotu/UploadFiles_5488/201102/20110216225239771.gif"/>
+  <view style="line-height:480rpx;" class="flex-item4" >正在加载...</view>
+  </view>
+</block>
+<block  wx:else >
+    <view class="flex-wrp bg-grey" >
+        <view class="flex-item" ></view>
+        <image  class="info-img"  src="{{ Movie.images.large }}"  />
+        <view class="flex-item" ></view>
+    </view>
+
+    <view class="flex-wrp margin-top" >
+        <view  class="flex-item3 movie-info">
+            <view>{{Movie.title}}</view>
+            <view class="small-text" >
+                <text class="movie-gener" >{{Movie.year}}</text>
+                <text class="movie-gener" wx:for="{{ Movie.genres }}" >
+                /{{item}}
+                </text>
+            </view>
+            <view class="small-text" >原名：{{ Movie.original_title }}</view>
+            <view class="small-text"  wx:if="{{Movie.durations!=null}}" >片长{{Movie.durations}}分钟</view>
+        </view>
+        <view class="flex-item" >
+            <view>
+                 <view class="box-shadow movie-tag" >
+                    <view class="text-center" >{{ Movie.rating.average }}</view>
+                    <view class="img-star-{{Movie.rating.stars}} img-tag"></view>
+                    <view class="text-center small-text">{{Movie.collect_count}}人</view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class=" summary" >
+        <view class="small-text" >简介</view>
+        <view class="movie-summary" >
+        {{ Movie.summary }}
+        </view>
+    </view>
+
+</block>

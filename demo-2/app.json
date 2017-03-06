@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "page/douban/index",
+    "page/douban/toprank",
+     "page/douban/movie"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "豆瓣电影",
+    "navigationBarBackgroundColor": "#fbf9fe",
+    "backgroundColor": "#fbf9fe"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "page/douban/index",
+      "text": "正在热映"},
+      {"pagePath": "page/douban/toprank",
+      "text": "口碑排行"}]
+  }
+}
